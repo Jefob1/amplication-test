@@ -9,8 +9,8 @@ generator client {
 
 model User {
   createdAt DateTime @default(now())
-  firstName String?
-  id        String   @id @default(cuid())
+  firstName String
+  id        String   @id @default(uuid())
   lastName  String?
   password  String
   roles     Json
